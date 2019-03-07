@@ -1,2 +1,21 @@
-curl -d '{"feature":[[6.5, 3.3, 5.4, 2.1]]}' -H "Content-Type: application/json" -X POST http://localhost:5000/api
-docker run -p 5000:5000 blog-post
+1. download jenkins.war from web
+2. download docker from web
+3. open cmd
+4. open directory you saved the war file
+5. run java -jar jenkins.war 
+6. get the ssh key example: a255da805c1241aa89ddb9c7b93c4861
+7. open chrome
+8. run localhost:8080
+9. paste the ssh
+10. Select setup necessary plugins
+11. Create a new job
+12. Go to git section
+13. Add your ssh/clone command from git repo
+14. Go down and select Build section
+15. Select Execute Shell
+16. Add docker build --pull -t blog-post .
+17. Add docker run -p 5000:5000 blog-post
+18. Save 
+19. Run 'Build-now'
+20. Test curl -d '{"feature":[[6.5, 3.3, 5.4, 2.1]]}' -H "Content-Type: application/json" -X POST http://localhost:5000/api
+ 

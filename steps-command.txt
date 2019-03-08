@@ -23,5 +23,8 @@
 22. open cmd 
 23. run ngork http 8080
 24. get the webhoot link
+25. go to your github account and select your project repo
+26. select 'Add webhook'
+27. Add the link. 
 
  

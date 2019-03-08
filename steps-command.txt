@@ -19,5 +19,9 @@
 19. Run 'Build-now'
 20. open a new cmd, run 'docker-machine ip'
 20. use the api to make post-request http://192.168.99.100:5000/api
- 
+21. Download ngork for windows
+22. open cmd 
+23. run ngork http 8080
+24. get the webhoot link
+
  
